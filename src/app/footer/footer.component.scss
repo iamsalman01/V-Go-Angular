@@ -1,0 +1,44 @@
+.f-size {
+    font-size: 28px;
+}
+
+
+.bg {
+    // background: #0F172A;
+    // color: #FFFFFF;
+    background: #1E293B;
+    color: #E2E8F0;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.font{
+    // background-color: #2a3e4a;
+    font-family: "Shizuru", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    // color: #fff;
+    color: #FACC15;
+
+      
+}
+
+.hover:hover{
+    color: #2EC4B6;
+}
+
+
+@media (max-width: 768px) {
+    .f-size {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .f-size {
+        font-size: 18px;
+    }
+}

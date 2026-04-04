@@ -1,0 +1,69 @@
+<div class="header d-flex justify-content-between align-items-center  px-3">
+
+  <!-- Logo -->
+  <h1 class="font cursor-pointer mb-0">V-Go</h1>
+
+  <!-- Menu -->
+  <div class="desktop">
+    <ul class="d-flex list-unstyled mb-0">
+      <li class="mx-2">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="mx-2">
+        <a class="nav-link" href="#">Login/Register</a>
+      </li>
+      <li class="mx-2">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="mx-2">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="mx-2">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Hamburger Icon -->
+
+    <i class="bi bi-list fs-2 hamburger" (click)="toggleMenu()"></i>
+
+
+</div>
+<div class="container">
+
+
+
+  <!-- Overlay -->
+  @if (isOpen) {
+  <div class="overlay" (click)="toggleMenu()"></div>
+  }
+
+  <!-- Sidebar Dialog -->
+  <div class="sidebar" [class.open]="isOpen">
+    <div class="p-3">
+      <div class="d-flex justify-content-between">
+        <h5>Menu</h5>
+        <h5 class="text-danger cursor-pointer" (click)="closeDialog()">X</h5>
+      </div>
+      <ul class=" list-unstyled mb-0">
+        <li class="mx-2">
+          <a class="nav-link" href="#"><i class="bi bi-house"></i> Home</a>
+        </li>
+        <li class="mx-2">
+          <a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right"></i> Login/Register</a>
+        </li>
+        <li class="mx-2">
+          <a class="nav-link" href="#"><i class="bi bi-gear"></i> Services</a>
+        </li>
+        <li class="mx-2">
+          <a class="nav-link" href="#"><i class="bi bi-person"></i> About</a>
+        </li>
+        <li class="mx-2">
+          <a class="nav-link" href="#"><i class="bi bi-telephone"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>

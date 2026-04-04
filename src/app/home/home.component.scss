@@ -1,0 +1,144 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('/assets/car.jpg') no-repeat right center/contain;
+    background-color: #0F172A;
+    display: flex;
+    align-items: center;
+}
+
+/* Dark gradient overlay (left side) */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #0F172A 41%, transparent);
+}
+
+/* Content */
+.hero-content {
+    position: relative;
+    color: #fff;
+    max-width: 500px;
+    margin-left: 60px;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #94A3B8;
+}
+
+/* Heading */
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Highlight */
+.highlight {
+    color: #FACC15;
+}
+
+/* Description */
+.desc {
+    margin: 15px 0;
+    color: #CBD5F5;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+/* Primary button */
+.btn-book {
+    background: #FACC15;
+    color: #000;
+}
+
+.btn-discover {
+    color: #fff;
+    background-color: #0F172A;
+    height: 30px;
+    width: fit-content;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-discover:hover {
+    background: #FACC15;
+
+}
+
+/* Secondary button */
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-outline:hover {
+    background: #FACC15;
+    color: #000;
+}
+
+.about-img {
+    width: 150px;
+    height: 190px;
+}
+
+.fw {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fs {
+    font-size: 10px;
+}
+
+/* Parent */
+.img-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+
+}
+
+/* Image */
+.about-img {
+    width: 150px;
+    height: 190px;
+    display: block;
+}
+
+/* Box (overlay) */
+.box {
+    position: absolute;
+    bottom: -41px;
+    left: 4px;
+    background: #0F172A;
+    color: #FACC15;
+    padding: 5px;
+    border-radius: 0px 30px 0px 30px;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {}
