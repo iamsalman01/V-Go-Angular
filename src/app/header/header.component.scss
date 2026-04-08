@@ -19,7 +19,8 @@
     width: 250px;
     height: 100%;
     // background: #fff;
-    background: linear-gradient(135deg, #2EC4B6,#2F4858,);
+    // background: linear-gradient(135deg, #2EC4B6,#2F4858,);
+    background: linear-gradient(135deg, #0F172A,#2F4858,);
     color: #fff;
     transition: 0.3s;
     z-index: 999;
@@ -57,9 +58,10 @@
 
 .header{
     // background-color: #1E293B;
-    background: linear-gradient(135deg, #2F4858, #2EC4B6);
-    height: 70px;
-        
+    // background: linear-gradient(135deg, #2F4858, #2EC4B6);
+    background: linear-gradient(135deg, #0F172A,#2F4858,);
+    height: 70px;     
+    border-bottom: 1px solid #FACC15;   
 }
 
 
@@ -96,7 +98,8 @@
     bottom: -2px;
     width: 0%;
     height: 2px;
-    background: #2EC4B6;
+    // background: #2EC4B6;
+    background: #FACC15;
     transition: 0.3s;
   }
   
@@ -118,6 +121,7 @@
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+        color:#FACC15;
     }
     .desktop{
         display: none;
