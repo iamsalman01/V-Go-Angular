@@ -1,0 +1,26 @@
+.img{
+    background: url('/assets/car.jpg') no-repeat right center/cover;
+    background-color: #0F172A;
+    height: 90vh;
+}
+.highlight {
+    color: #FACC15;
+}
+.heading{
+    color: antiquewhite;
+}
+.fs{
+    font-size: 30px;
+    font-weight: bold;
+}
+.display{
+    display: block;
+}
+
+@media(max-width:576px){
+    .display{
+      
+        display: none;
+    }
+    
+}
